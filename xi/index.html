@@ -569,7 +569,7 @@
             let normalized = text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
             
             // Normalize all apostrophe variants to a standard apostrophe
-            normalized = normalized.replace(/[''´`‘]/g, "'");
+            normalized = normalized.replace(/[''´`‘’]/g, "'");
             
             return normalized;
         }

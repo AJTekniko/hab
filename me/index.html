@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/AJTekniko/ajtekniko/main/pics/profile-pic.png">
+    <title>Have a Blast!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌎 Have a Blast!</h1>
+        </div>
+
+        <div class="game-info">
+            <div class="info-item">
+                <div class="info-label">Score</div>
+                <div class="info-value" id="score">0</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Level</div>
+                <div class="info-value" id="level">1</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Accuracy</div>
+                <div class="info-value" id="accuracy">0%</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Meteors Destroyed</div>
+                <div class="info-value" id="destroyed">0</div>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="space-area" id="spaceArea"></div>
+            <div class="earth-container">
+                <div class="earth">🌎</div>
+                <button class="music-toggle" id="musicToggle">🔊 Music ON</button>
+            </div>
+            <!-- Created by Alberto J. -->
+            <div class="game-over" id="gameOver">
+                <h2>GAME OVER!</h2>
+                <div class="score" id="finalScore">0</div>
+                <div class="stats">
+                    <div class="stats-row">
+                        <span>Final Level:</span>
+                        <span id="statsFinalLevel">1</span>
+                    </div>
+                    <div class="stats-row">
+                        <span>Meteors Destroyed:</span>
+                        <span id="statsDestroyed">0</span>
+                    </div>
+                    <div class="stats-row">
+                        <span>Accuracy:</span>
+                        <span id="statsAccuracy">0%</span>
+                    </div>
+                    <div class="stats-divider"></div>
+                    <div class="high-score-section">
+                        <h3>⭐ Your High Score</h3>
+                        <div class="stats-row">
+                            <span>Score:</span>
+                            <span id="statsHighScore">0</span>
+                        </div>
+                        <div class="stats-row">
+                            <span>Meteors Destroyed:</span>
+                            <span id="statsHighScoreMeteors">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button onclick="location.reload()">Play Again</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="input" placeholder="Type the words to destroy meteors..." autocomplete="off">
+            <button id="startBtn" onclick="startGame()">Start Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
